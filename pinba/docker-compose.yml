@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+    pinba:
+        image: tony2001/pinba
+        network_mode: "host"    
