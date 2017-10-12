@@ -2,7 +2,7 @@ version: '2'
 
 services:
   collectd:
-    image: collectd_dbi_mysql:latest
+    build: collectd
     volumes:
       - ./collectd/collectd.conf:/etc/collectd/collectd.conf
     networks:

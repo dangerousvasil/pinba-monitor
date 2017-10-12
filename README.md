@@ -7,15 +7,11 @@ php -> pinba(mysql) -> collectd -> ingluxDB -> grafana
 # Set up php
 Install on php-application server php-pinba extension and setup it send statistic to host and 30002 port machine with running service.
 
-## Build collectd dbi mysql driver 
-```
-cd collectd
-docker build -t collectd_dbi_mysql .
-```
+
 ## Setup pinba mysql  
 ```
 cd pinba
-docker-composer up
+docker-compose up
 ```
 Open pinba server from you mysql client and __add user__ or change permissions for current user
 ```

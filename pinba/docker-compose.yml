@@ -1,6 +1,8 @@
 version: '2'
 
 services:
-    pinba:
-        image: tony2001/pinba
-        network_mode: "host"    
+  pinba:
+    image: tony2001/pinba
+    network_mode: "host"
+    volumes:
+      - ./my.conf:/local/mysql/etc/my.cnf
